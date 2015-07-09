@@ -1,0 +1,164 @@
+
+/*------------- CsvExport -------------*/
+
+.gwt-Anchor {
+    font-size: 0.8em;
+    font-weight: bold;
+}	
+
+/*------------- ThemeWidget -------------*/
+
+.themeWidget-selectionPanelHover,
+.themeWidgetDescriptionHover {
+	background-color: #E0E9FF;
+	border: thin solid #3764A3;
+}
+
+.themeWidget-selectionPanel,
+.themeWidgetDescription {
+	background-color: transparent;
+	border: thin solid #E0E9FF;
+}
+
+.themeWidget-selectionPanelTitle,
+.themeCategory {
+    color: #3764A3;
+    background-color: #E0E9FF;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+/*------------- SearchPage -------------*/
+
+.searchPageCategory {
+    color: #3764A3;
+    background-color: #E0E9FF;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.searchPageSubCategory {
+    font-size: 0.7em;
+    font-style: italic;
+    border-bottom: 2px solid #3764A3;
+    padding-left: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.cellHeading4 {
+    font-weight:bold;text-overflow:ellipsis;
+     font-size: 12px;
+    text-transform:uppercase;
+    border-top-width:0px;    
+    border-bottom-width:0px;
+    margin-top:1px;
+    margin-bottom:1px;
+    padding-left: 1px;
+}
+
+.cellHeading2 {
+    font-weight:bold;text-overflow:ellipsis;
+    text-transform:uppercase;
+    border-top-width:0px;    
+    border-bottom-width:0px;
+    margin-top:1px;
+    margin-bottom:1px;   
+    padding-left: 1px;
+}
+
+.cellHeading3 {
+    font-weight:bold;text-overflow:ellipsis;
+    border-top-width:0px;    
+    border-bottom-width:0px;
+    margin-top:1px; 
+    margin-bottom:1px;   
+    padding-left: 1px;
+}
+
+.cellText2 {
+    font-weight:bold;text-overflow:ellipsis;
+    padding-left: 5px;
+    border-top-width:0px;    
+    border-bottom-width:0px;
+    margin-top:1px;
+    margin-bottom:1px;
+}
+
+.cellBedrag {
+    text-overflow:ellipsis;
+    padding-right: 1px;
+    border-top-width:0px;    
+    border-bottom-width:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+
+
+
+/*------------- Loket VAPH -------------*/
+
+.vaphTitle {
+	margin-left: 5px;
+	width: 300px;
+	height: 16px;
+	color: #503216;
+	font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*------------- Loket VIOE -------------*/
+
+.vioeTitle {
+	margin-left: 5px;
+	width: 300px;
+	height: 16px;
+}
+
+.vioeTitle1 {
+	font-size: 1.3em;
+    font-weight: bold;
+}
+
+.vioeTitle2 {
+	color: #E36534;
+	font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+/*------------- InfoWindow -------------*/
+
+.infoMessage {
+	margin: 0px;
+	padding:3px;
+	font-size: 1em;
+	font-style: italic;
+}
+
+.errorMessage {
+	margin: 0px;
+	padding:3px;
+	font-size: 1em;
+	font-style: italic;
+	background-color: #ffeaea;
+}
+
+.infoWindowBreak {
+	margin: 2px;
+	padding: 0;
+	height: 1px;
+	width: 90%;
+	background-color: #cccccc;
+}
+
+/* 
+or: #cccccc;
+}
+
+ */

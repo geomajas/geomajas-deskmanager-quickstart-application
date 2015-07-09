@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:util="http://www.springframework.org/schema/util" xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx" xmlns:task="http://www.springframework.org/schema/task"
+	   xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<import resource="datastore.xml" />
+	<import resource="userApplications.xml" />
+	<import resource="dynamicLayersApplication.xml" />
+	<import resource="properties.xml" />
+	<import resource="cacheLocation.xml" />
+
+	<context:component-scan base-package="org.geomajas.project.deskmanager.quickstart"
+							name-generator="org.geomajas.spring.GeomajasBeanNameGenerator" />
+
+	<!--this wasn't here before, would have come from server common-servlet. Maybe needs to be removed again. -->
+	<bean id="securityInterceptor" class="org.geomajas.servlet.mvc.SecurityInterceptor"/>
+
+
+	<bean name="security.securityInfo" class="org.geomajas.security.SecurityInfo">
+		<property name="loopAllServices" value="false" />
+		<property name="securityServices">
+			<list>
+				<ref bean="DeskmanagerSecurityService" />
+			</list>
+		</property>
+	</bean>
+
+	<context:annotation-config />
+
+</beans>

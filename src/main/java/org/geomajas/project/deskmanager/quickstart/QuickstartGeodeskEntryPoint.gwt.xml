@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module rename-to="QuickstartGeodeskEntryPoint">
+
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name="com.google.gwt.user.theme.standard.Standard" />
+
+	<!-- Geomajas Client -->
+	<inherits name="org.geomajas.gwt2.GeomajasClientImpl" />
+	<inherits name="org.geomajas.gwt2.GeomajasClientServerExtension" />
+
+	<inherits name="org.geomajas.plugin.deskmanager.Geodesk"/>
+
+	<inherits name="org.geomajas.project.deskmanager.quickstart.QuickstartCommonEntryPoint" />
+
+	<entry-point class="org.geomajas.project.deskmanager.quickstart.geodesk.client.QuickstartGeodeskEntryPoint"/>
+
+	<source path="geodesk/client"/>
+
+</module>

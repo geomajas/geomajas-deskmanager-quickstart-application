@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module rename-to="QuickstartManagerEntryPoint">
+
+	<inherits name="org.geomajas.plugin.deskmanager.Manager"/>
+	<inherits name="org.geomajas.plugin.deskmanager.Geodesk"/>
+
+	<inherits name="com.smartclient.theme.enterprise.Enterprise"/>
+
+	<inherits name="org.geomajas.project.deskmanager.quickstart.QuickstartCommonEntryPoint" />
+
+	<entry-point class="org.geomajas.project.deskmanager.quickstart.manager.client.QuickstartManagerEntryPoint"/>
+
+    <set-property-fallback name="locale" value="en"/>
+
+    <source path="manager/client"/>
+
+</module>
+
