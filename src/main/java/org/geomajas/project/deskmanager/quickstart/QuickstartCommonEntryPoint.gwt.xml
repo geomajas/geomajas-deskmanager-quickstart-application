@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module>
+
+	<inherits name="org.geomajas.plugin.deskmanager.Geodesk"/>
+
+	<entry-point class="org.geomajas.project.deskmanager.quickstart.common.client.DeskmanagerQuickstartCommonEntryPoint"/>
+
+	<source path="common/client"/>
+
+</module>
