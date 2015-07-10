@@ -11,5 +11,5 @@ cache:
   directories:
   - $HOME/.m2
 install: true
-script: 
+script:
   - mvn verify -B -V --settings target/geomajas-build-tools/settings.xml -q

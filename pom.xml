@@ -29,11 +29,11 @@
 		<geomajas-build-tools-version>2.5.0</geomajas-build-tools-version>
 	</properties>
 
-	<scm>
-		<connection>scm:git:git@github.com:geomajas/geomajas-gwt-quickstart-application.git</connection>
-		<developerConnection>scm:git:git@github.com:geomajas/geomajas-gwt-quickstart-application.git</developerConnection>
-		<url>https://github.com/geomajas/geomajas-gwt-quickstart-application.git</url>
-	</scm>
+    <scm>
+        <connection>scm:git:git@github.com:geomajas/geomajas-deskmanager-quickstart-application.git</connection>
+        <developerConnection>scm:git:git@github.com:geomajas/geomajas-deskmanager-quickstart-application.git</developerConnection>
+        <url>https://github.com/geomajas/geomajas-deskmanager-quickstart-application.git</url>
+    </scm>
 
 	<licenses>
 		<license>
