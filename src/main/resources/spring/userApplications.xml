@@ -36,6 +36,8 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 					</property>
 					<property name="layers">
 						<list>
+                            <!-- layer from geomajas-project-deskmanager-impl module -->
+                            <ref bean="clientLayerOsm" />
 						</list>
 					</property>
 				</bean>
@@ -48,6 +50,8 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 		<property name="id" value="mainMap" />
 		<property name="layers">
 			<list>
+                <!-- layer from geomajas-project-deskmanager-impl module -->
+                <ref bean="clientLayerOsm" />
 			</list>
 		</property>
 		<property name="backgroundColor" value="#FFFFFF" />

@@ -10,16 +10,21 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			<!-- Load geomajas -->
-			classpath:org/geomajas/spring/geomajasContext.xml
-			classpath*:META-INF/geomajasContext*.xml
-			classpath:org/geomajas/plugin/rasterizing/DefaultCachedAndRasterizedPipelines.xml
+            classpath:org/geomajas/spring/geomajasContext.xml
+            classpath*:META-INF/geomajasContext*.xml
+            classpath:org/geomajas/plugin/rasterizing/DefaultCachedAndRasterizedPipelines.xml
 
-			<!-- Load deskmanager -->
-			classpath*:org/geomajas/plugin/deskmanager/spring/**/*.xml
+            classpath*:org/geomajas/plugin/deskmanager/spring/**/*.xml
 
-			<!-- Load application -->
-			classpath:spring/applicationContext.xml
+            classpath:spring/applicationContext.xml
+
+            <!-- WMS layer -->
+            WEB-INF/layer/WMS/layerSimplifiedCountriesWms.xml
+            WEB-INF/layer/WMS/clientLayerSimplifiedCountriesWms.xml
+
+            <!-- WFS layer -->
+            WEB-INF/layer/WFS/layerSimplifiedCountriesWFS.xml
+            WEB-INF/layer/WFS/clientLayerSimplifiedCountriesWfs.xml
 		</param-value>
 	</context-param>
 
