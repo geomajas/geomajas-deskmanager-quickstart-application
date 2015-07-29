@@ -11,6 +11,7 @@
 package org.geomajas.project.deskmanager.quickstart.common.client;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 import org.geomajas.plugin.deskmanager.client.gwt.common.GdmLayout;
 import org.geomajas.plugin.deskmanager.client.gwt.common.GeodeskIdUtil;
 
@@ -36,5 +37,7 @@ public class DeskmanagerQuickstartCommonEntryPoint implements EntryPoint {
 				return "../geodesk/index.html?geodesk=" + geodeskId;
 			}
 		};
+		//loading logo
+		GdmLayout.loadingLogo = GWT.getModuleBaseURL() + "images/Geomajas-Logo-Large.png";
 	}
 }
